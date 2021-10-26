@@ -8,6 +8,7 @@ Authors@R:
            email = "jdt@jdtrat.com",
            comment = c(ORCID = "0000-0002-1097-7603"))
 Description: What the package does (one paragraph).
+License: MIT + file LICENSE
 Encoding: UTF-8
 Language: es
 LazyData: true
