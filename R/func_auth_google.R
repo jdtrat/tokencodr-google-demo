@@ -1,0 +1,16 @@
+#' Authenticate Google Credentials
+#'
+#' @param service The name of the service used to encrypt a file with [tokencodr::encrypt_token()]
+#' @param token_path Path to encrypted json file, the `destination` field of [tokencodr::encrypt_token()].
+#'
+#' @return NA; used to authenticate Google Credentials
+#'
+auth_google <- function(service, token_path) {
+  googlesheets4::gs4_auth(path = tokencodr::decrypt_token(service = service,
+                                                          path = token_path,
+                                                          complete = TRUE))
+
+  googledrive::drive_auth(path = tokencodr::decrypt_token(service = service,
+                                                          path = token_path,
+                                                          complete = TRUE))
+}
