@@ -5,6 +5,7 @@ library(googledrive)
 
 # Run once and copy password to .Renviron
 # For this demo I used "tokencodr_demo_google"
+# Make sure you add this to your repository secrets (I forgot originally)
 tokencodr::create_env_pw("description-of-service")
 
 # Assumes the JSON file is a Google Service Account as described here:
