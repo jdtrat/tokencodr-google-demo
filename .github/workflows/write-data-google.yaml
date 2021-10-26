@@ -11,7 +11,7 @@ jobs:
     env:
       MY_GITHUB_REPO: ${{ github.repository }}
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-      TOKENCODR_DEMO_PASSWORD: ${{ secrets.TOKENCODR_DEMO_PASSWORD }}
+      TOKENCODR_GOOGLE_DEMO_PASSWORD: ${{ secrets.TOKENCODR_GOOGLE_DEMO_PASSWORD }}
       R_KEEP_PKG_SOURCE: yes
     steps:
       - name: Checkout
