@@ -1,5 +1,6 @@
 ^tokencodr-google-demo\.Rproj$
 ^\.github$
+^LICENSE\.md$
+^\.Rproj\.user$
 ^scripts$
 ^resources$
-^LICENSE\.md$
