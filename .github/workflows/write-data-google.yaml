@@ -23,7 +23,7 @@ jobs:
           use-public-rspm: true
 
       - name: Manually install libsodium
-        run: 'sudo apt-get install -y libsodium'
+        run: 'sudo apt-get install -y libsodium-dev'
 
       - name: Setup R Dependencies
         uses: r-lib/actions/setup-r-dependencies@v1
